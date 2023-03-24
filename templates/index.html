@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>Spotify Player</title>
+    </head>
+    <body>
+        <h1>Spotify Player</h1>
+        <button>Play</button>
+        {% for song in songs %}
+            <p>{{ song["name"] }} is in {{ song["path"] }}</p>
+        {% endfor %}
+        <p>Hey</p>
+    </body>
+</html>
