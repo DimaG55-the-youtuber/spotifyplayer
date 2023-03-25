@@ -6,8 +6,8 @@
         <h1>Spotify Player</h1>
         <button>Play</button>
         {% for song in songs %}
-            <p>{{ song["name"] }} is in {{ song["path"] }}</p>
-            <audio>
+            <p>{{ song["name"] }}</p>
+            <audio controls>
                 <source src="{{ song['path'] }}" type="audio/mpeg">
             </audio>
 
